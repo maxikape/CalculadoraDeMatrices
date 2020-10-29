@@ -1,8 +1,10 @@
 ﻿using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
+using System.Windows;
 //using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -10,7 +12,6 @@ namespace calculadora_de_matrices
 {
     class Operaciones
     {
-       
         float[,] matrizA = new float[100, 100];
         float[,] matrizB = new float[100, 100];
         
@@ -158,7 +159,7 @@ namespace calculadora_de_matrices
                     operacionresult[i, j] = 0;
                         for (int z = 0; z < columna1; z++)
                         {
-                            operacionresult[i, j] = (matrizA[i, z] * matrizB[z, j]) + operacionresult[i, j];
+                            operacionresult[i, j]  = (matrizA[i, z] * matrizB[z, j]) + operacionresult[i, j];
                             multiplica.Rows[i].Cells[j].Value = operacionresult[i, j].ToString();
                         }
                     }
@@ -170,14 +171,24 @@ namespace calculadora_de_matrices
                 MessageBox.Show("El n° de comlumnas de la matriz A deber ser igual al n° filas de la matriz B");
             }
         }
-        //ni ideaaaaaaaaaaaa jeje
-        public void Escalar(DataGridView tabla)
+        //probando explicitamente multiplicar x 3 no sale ):,,si le sumo 3 a cada valor de la matris
+        //queda en 3 . osea qoe la matriz operacionresult esta 
+        //quedando en cero no me doy cuenta que esta mal 
+        public void Escalar(DataGridView multiplicaE)
         {
-            
-            operacionresult = matrizA;
+            multiplicaE.RowCount = fila1;
+            multiplicaE.ColumnCount = columna1;
 
-            
+            for (i = 0; i < fila1; i++)
+            {
+                for (j = 0; j < columna1; j++)
+                {
+                    operacionresult[i, j] = operacionresult[i, j] +3;
+                    multiplicaE.Rows[i].Cells[j].Value = operacionresult[i, j].ToString();
 
+
+                }
+            }
         }
 
 

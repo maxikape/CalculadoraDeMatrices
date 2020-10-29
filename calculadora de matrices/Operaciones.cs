@@ -170,6 +170,15 @@ namespace calculadora_de_matrices
                 MessageBox.Show("El n° de comlumnas de la matriz A deber ser igual al n° filas de la matriz B");
             }
         }
+        //ni ideaaaaaaaaaaaa jeje
+        public void Escalar(DataGridView tabla)
+        {
+            
+            operacionresult = matrizA;
+
+            
+
+        }
 
 
     }

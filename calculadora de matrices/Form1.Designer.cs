@@ -49,6 +49,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.btnEscalar = new System.Windows.Forms.Button();
+            this.txtEscalar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -239,11 +241,30 @@
             this.dataGridView3.Size = new System.Drawing.Size(284, 115);
             this.dataGridView3.TabIndex = 31;
             // 
+            // btnEscalar
+            // 
+            this.btnEscalar.Location = new System.Drawing.Point(411, 42);
+            this.btnEscalar.Name = "btnEscalar";
+            this.btnEscalar.Size = new System.Drawing.Size(75, 23);
+            this.btnEscalar.TabIndex = 33;
+            this.btnEscalar.Text = "Escalar";
+            this.btnEscalar.UseVisualStyleBackColor = true;
+            this.btnEscalar.Click += new System.EventHandler(this.btnEscalar_Click);
+            // 
+            // txtEscalar
+            // 
+            this.txtEscalar.Location = new System.Drawing.Point(435, 68);
+            this.txtEscalar.Name = "txtEscalar";
+            this.txtEscalar.Size = new System.Drawing.Size(35, 20);
+            this.txtEscalar.TabIndex = 32;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 481);
+            this.Controls.Add(this.btnEscalar);
+            this.Controls.Add(this.txtEscalar);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
@@ -298,6 +319,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnEscalar;
+        private System.Windows.Forms.TextBox txtEscalar;
     }
 }
 

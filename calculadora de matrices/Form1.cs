@@ -58,6 +58,10 @@ namespace calculadora_de_matrices
             
 
         }
- 
+
+        private void btnEscalar_Click(object sender, EventArgs e)
+        {
+            objmatrices.Escalar(dataGridView3);
+        }
     }
 }

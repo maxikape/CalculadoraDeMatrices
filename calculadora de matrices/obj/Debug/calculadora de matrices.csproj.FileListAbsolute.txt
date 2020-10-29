@@ -1,0 +1,10 @@
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\bin\Debug\calculadora de matrices.exe.config
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\bin\Debug\calculadora de matrices.exe
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\bin\Debug\calculadora de matrices.pdb
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora de matrices.csprojAssemblyReference.cache
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora_de_matrices.Form1.resources
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora_de_matrices.Properties.Resources.resources
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora de matrices.csproj.GenerateResource.cache
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora de matrices.csproj.CoreCompileInputs.cache
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora de matrices.exe
+C:\Users\MAXx\source\repos\calculadora de matrices\calculadora de matrices\obj\Debug\calculadora de matrices.pdb

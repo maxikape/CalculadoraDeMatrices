@@ -11,11 +11,11 @@ namespace calculadora_de_matrices
     class Operaciones
     {
        
-        int[,] matrizA = new int[100, 100];
-        int[,] matrizB = new int[100, 100];
+        float[,] matrizA = new float[100, 100];
+        float[,] matrizB = new float[100, 100];
         
 
-        int[,] operacionresult = new int[100, 100];
+        float[,] operacionresult = new float[100, 100];
         int i, j, fila1, columna1, fila2, columna2 ;
 
         public void insertarA(TextBox panel1, TextBox panel2)
@@ -34,7 +34,7 @@ namespace calculadora_de_matrices
                 {
                     for (j=0; j < columna1; j++)
                     {
-                        matrizA[i, j] = int.Parse(Interaction.InputBox("Datos i", "Datos en j", "", fila1, columna1));
+                        matrizA[i, j] = float.Parse(Interaction.InputBox("Datos i", "Datos en j", "", fila1, columna1));
                     }
                 }
             }
@@ -57,7 +57,7 @@ namespace calculadora_de_matrices
                 {
                     for (j = 0; j < columna2; j++)
                     {
-                        matrizB[i, j] = int.Parse(Interaction.InputBox("Datos i", "Datos en j", "", fila2, columna2));
+                        matrizB[i, j] = float.Parse(Interaction.InputBox("Datos i", "Datos en j", "", fila2, columna2));
                     }
                 }
             }
@@ -145,7 +145,8 @@ namespace calculadora_de_matrices
 
         public void Multiplicar(DataGridView multiplica)
         {
-         
+            if (columna1 == fila2)
+            {
 
                 multiplica.RowCount = fila1;
                 multiplica.ColumnCount = columna2;
@@ -163,7 +164,11 @@ namespace calculadora_de_matrices
                     }
                 }
 
-            
+            }
+            else
+            {
+                MessageBox.Show("El n° de comlumnas de la matriz A deber ser igual al n° filas de la matriz B");
+            }
         }
 
 

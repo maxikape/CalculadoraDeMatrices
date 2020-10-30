@@ -183,9 +183,12 @@ namespace calculadora_de_matrices
             {
                 for (j = 0; j < columna1; j++)
                 {
-                    operacionresult[i, j] = operacionresult[i, j] +3;
+
+                        operacionresult[i, j] = (matrizA[i, j] * 3);
                     multiplicaE.Rows[i].Cells[j].Value = operacionresult[i, j].ToString();
 
+
+                    
 
                 }
             }

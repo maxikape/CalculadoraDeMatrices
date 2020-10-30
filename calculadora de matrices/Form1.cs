@@ -17,10 +17,9 @@ namespace  calculadora_de_matrices
         public Form1()
         {
             InitializeComponent();
+            
         }
         Operaciones objmatrices = new Operaciones();
-
-       
 
         private void btnInsertarA_Click(object sender, EventArgs e)
         {
@@ -61,18 +60,12 @@ namespace  calculadora_de_matrices
             
 
         }
-        
-        //public void MandarEscalar()
-        //{
-        //    float asd = float.Parse(txtEscalar.Text);
-        //    return ;
 
-        //}
-       
+
         public void btnEscalar_Click(object sender, EventArgs e)
         {
-
-            objmatrices.Escalar(dataGridView3);
+           
+            objmatrices.Escalar(dataGridView3, float.Parse(txtEscalar.Text));
         }
         
     }

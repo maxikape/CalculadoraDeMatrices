@@ -13,8 +13,7 @@ namespace calculadora_de_matrices
 {
     class Operaciones
     {
-        //Form1 frm = new Form1();
-        
+     
         float[,] matrizA = new float[100, 100];
         float[,] matrizB = new float[100, 100];
         
@@ -175,8 +174,9 @@ namespace calculadora_de_matrices
             }
         }
        
-        public void Escalar(DataGridView multiplicaE)
+        public void Escalar(DataGridView multiplicaE,float escalar)
         {
+           
             multiplicaE.RowCount = fila1;
             multiplicaE.ColumnCount = columna1;
 
@@ -186,7 +186,7 @@ namespace calculadora_de_matrices
                 {
                   
 
-                        operacionresult[i, j] = matrizA[i, j] * 3;
+                        operacionresult[i, j] = matrizA[i, j] * escalar ;
                     multiplicaE.Rows[i].Cells[j].Value = operacionresult[i, j].ToString();
                     
 

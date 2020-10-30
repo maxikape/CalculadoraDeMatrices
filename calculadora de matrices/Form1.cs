@@ -4,21 +4,24 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace calculadora_de_matrices
+namespace  calculadora_de_matrices
 {
     public partial class Form1 : Form
     {
-        
+                
         public Form1()
         {
             InitializeComponent();
         }
         Operaciones objmatrices = new Operaciones();
-        
+
+       
+
         private void btnInsertarA_Click(object sender, EventArgs e)
         {
             objmatrices.insertarA(txtFilaA, txtColumnaA);
@@ -58,10 +61,19 @@ namespace calculadora_de_matrices
             
 
         }
+        
+        //public void MandarEscalar()
+        //{
+        //    float asd = float.Parse(txtEscalar.Text);
+        //    return ;
 
-        private void btnEscalar_Click(object sender, EventArgs e)
+        //}
+       
+        public void btnEscalar_Click(object sender, EventArgs e)
         {
+
             objmatrices.Escalar(dataGridView3);
         }
+        
     }
 }

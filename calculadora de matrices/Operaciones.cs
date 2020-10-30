@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
 //using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace calculadora_de_matrices
 {
     class Operaciones
     {
+        //Form1 frm = new Form1();
+        
         float[,] matrizA = new float[100, 100];
         float[,] matrizB = new float[100, 100];
         
@@ -171,9 +174,7 @@ namespace calculadora_de_matrices
                 MessageBox.Show("El n° de comlumnas de la matriz A deber ser igual al n° filas de la matriz B");
             }
         }
-        //probando explicitamente multiplicar x 3 no sale ):,,si le sumo 3 a cada valor de la matris
-        //queda en 3 . osea qoe la matriz operacionresult esta 
-        //quedando en cero no me doy cuenta que esta mal 
+       
         public void Escalar(DataGridView multiplicaE)
         {
             multiplicaE.RowCount = fila1;
@@ -183,10 +184,11 @@ namespace calculadora_de_matrices
             {
                 for (j = 0; j < columna1; j++)
                 {
+                  
 
-                        operacionresult[i, j] = (matrizA[i, j] * 3);
+                        operacionresult[i, j] = matrizA[i, j] * 3;
                     multiplicaE.Rows[i].Cells[j].Value = operacionresult[i, j].ToString();
-
+                    
 
                     
 

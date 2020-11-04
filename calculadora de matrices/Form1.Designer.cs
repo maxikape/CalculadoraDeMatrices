@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnInsertarA = new System.Windows.Forms.Button();
             this.txtColumnaA = new System.Windows.Forms.TextBox();
             this.txtFilaA = new System.Windows.Forms.TextBox();
@@ -51,14 +52,17 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.btnEscalar = new System.Windows.Forms.Button();
             this.txtEscalar = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInsertarA
             // 
-            this.btnInsertarA.Location = new System.Drawing.Point(75, 8);
+            this.btnInsertarA.Location = new System.Drawing.Point(139, 13);
             this.btnInsertarA.Name = "btnInsertarA";
             this.btnInsertarA.Size = new System.Drawing.Size(75, 23);
             this.btnInsertarA.TabIndex = 0;
@@ -68,14 +72,14 @@
             // 
             // txtColumnaA
             // 
-            this.txtColumnaA.Location = new System.Drawing.Point(12, 91);
+            this.txtColumnaA.Location = new System.Drawing.Point(76, 96);
             this.txtColumnaA.Name = "txtColumnaA";
             this.txtColumnaA.Size = new System.Drawing.Size(35, 20);
             this.txtColumnaA.TabIndex = 3;
             // 
             // txtFilaA
             // 
-            this.txtFilaA.Location = new System.Drawing.Point(12, 50);
+            this.txtFilaA.Location = new System.Drawing.Point(76, 55);
             this.txtFilaA.Name = "txtFilaA";
             this.txtFilaA.Size = new System.Drawing.Size(35, 20);
             this.txtFilaA.TabIndex = 4;
@@ -83,24 +87,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 34);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(76, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.Size = new System.Drawing.Size(27, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Fila";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 75);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(76, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "columna";
             // 
             // btnMostrarA
             // 
-            this.btnMostrarA.Location = new System.Drawing.Point(61, 163);
+            this.btnMostrarA.Location = new System.Drawing.Point(125, 168);
             this.btnMostrarA.Name = "btnMostrarA";
             this.btnMostrarA.Size = new System.Drawing.Size(75, 23);
             this.btnMostrarA.TabIndex = 7;
@@ -110,7 +116,7 @@
             // 
             // btnMostrarB
             // 
-            this.btnMostrarB.Location = new System.Drawing.Point(630, 176);
+            this.btnMostrarB.Location = new System.Drawing.Point(625, 177);
             this.btnMostrarB.Name = "btnMostrarB";
             this.btnMostrarB.Size = new System.Drawing.Size(75, 23);
             this.btnMostrarB.TabIndex = 14;
@@ -121,38 +127,40 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(581, 88);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(576, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "columna";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(581, 47);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(576, 43);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 13);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Fila";
             // 
             // txtFilaB
             // 
-            this.txtFilaB.Location = new System.Drawing.Point(581, 63);
+            this.txtFilaB.Location = new System.Drawing.Point(576, 64);
             this.txtFilaB.Name = "txtFilaB";
             this.txtFilaB.Size = new System.Drawing.Size(35, 20);
             this.txtFilaB.TabIndex = 11;
             // 
             // txtComulnaB
             // 
-            this.txtComulnaB.Location = new System.Drawing.Point(581, 104);
+            this.txtComulnaB.Location = new System.Drawing.Point(576, 105);
             this.txtComulnaB.Name = "txtComulnaB";
             this.txtComulnaB.Size = new System.Drawing.Size(35, 20);
             this.txtComulnaB.TabIndex = 10;
             // 
             // btnInsertarB
             // 
-            this.btnInsertarB.Location = new System.Drawing.Point(644, 21);
+            this.btnInsertarB.Location = new System.Drawing.Point(639, 22);
             this.btnInsertarB.Name = "btnInsertarB";
             this.btnInsertarB.Size = new System.Drawing.Size(75, 23);
             this.btnInsertarB.TabIndex = 8;
@@ -162,7 +170,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(224, 270);
+            this.button5.Location = new System.Drawing.Point(366, 267);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 21;
@@ -172,7 +180,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(411, 270);
+            this.button6.Location = new System.Drawing.Point(553, 267);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 22;
@@ -182,7 +190,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(323, 270);
+            this.button7.Location = new System.Drawing.Point(465, 267);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 23;
@@ -193,34 +201,37 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(196, 18);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(236, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.Size = new System.Drawing.Size(85, 24);
             this.label5.TabIndex = 24;
             this.label5.Text = "matriz A";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(778, 31);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(734, 20);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.Size = new System.Drawing.Size(99, 25);
             this.label6.TabIndex = 25;
             this.label6.Text = "Matriz B";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(331, 309);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(414, 294);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(84, 13);
+            this.label7.Size = new System.Drawing.Size(189, 25);
             this.label7.TabIndex = 26;
             this.label7.Text = "Matriz resultante";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(61, 38);
+            this.dataGridView1.Location = new System.Drawing.Point(125, 43);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(284, 115);
             this.dataGridView1.TabIndex = 29;
@@ -228,7 +239,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(634, 50);
+            this.dataGridView2.Location = new System.Drawing.Point(629, 51);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(284, 115);
             this.dataGridView2.TabIndex = 30;
@@ -236,16 +247,16 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(226, 325);
+            this.dataGridView3.Location = new System.Drawing.Point(368, 322);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(284, 115);
             this.dataGridView3.TabIndex = 31;
             // 
             // btnEscalar
             // 
-            this.btnEscalar.Location = new System.Drawing.Point(411, 42);
+            this.btnEscalar.Location = new System.Drawing.Point(465, 70);
             this.btnEscalar.Name = "btnEscalar";
-            this.btnEscalar.Size = new System.Drawing.Size(75, 23);
+            this.btnEscalar.Size = new System.Drawing.Size(60, 42);
             this.btnEscalar.TabIndex = 33;
             this.btnEscalar.Text = "Escalar";
             this.btnEscalar.UseVisualStyleBackColor = true;
@@ -253,16 +264,36 @@
             // 
             // txtEscalar
             // 
-            this.txtEscalar.Location = new System.Drawing.Point(435, 68);
+            this.txtEscalar.Location = new System.Drawing.Point(476, 118);
             this.txtEscalar.Name = "txtEscalar";
             this.txtEscalar.Size = new System.Drawing.Size(35, 20);
             this.txtEscalar.TabIndex = 32;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(288, 168);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 34;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 248);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(201, 226);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1002, 481);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnEscalar);
             this.Controls.Add(this.txtEscalar);
             this.Controls.Add(this.dataGridView3);
@@ -291,6 +322,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,6 +353,8 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btnEscalar;
         private System.Windows.Forms.TextBox txtEscalar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

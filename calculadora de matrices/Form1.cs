@@ -24,23 +24,23 @@ namespace  calculadora_de_matrices
         private void btnInsertarA_Click(object sender, EventArgs e)
         {
             objmatrices.insertarA(txtFilaA, txtColumnaA);
+            objmatrices.MostrarA(dataGridView1);
 
         }
 
         private void btnInsertarB_Click(object sender, EventArgs e)
         {
             objmatrices.insertarB(txtFilaB, txtComulnaB);
+            objmatrices.MostrarB(dataGridView2);
 
         }
 
         private void btnMostrarA_Click(object sender, EventArgs e)
         {
-            objmatrices.MostrarA(dataGridView1);
         }
 
         private void btnMostrarB_Click(object sender, EventArgs e)
         {
-            objmatrices.MostrarB(dataGridView2);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -67,6 +67,20 @@ namespace  calculadora_de_matrices
            
             objmatrices.Escalar(dataGridView3, float.Parse(txtEscalar.Text));
         }
-        
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtEscalar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
